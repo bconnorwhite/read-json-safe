@@ -1,22 +1,22 @@
-# read-file-safe
-![dependencies](https://img.shields.io/david/safe-read-file)
-![typescript](https://img.shields.io/github/languages/top/bconnorwhite/safe-read-file)
-![npm](https://img.shields.io/npm/v/safe-read-file)
+# read-json-safe
+![dependencies](https://img.shields.io/david/bconnorwhite/read-json-safe)
+![typescript](https://img.shields.io/github/languages/top/bconnorwhite/read-json-safe)
+![npm](https://img.shields.io/npm/v/read-json-safe)
 
-Read files without try catch.
+Read and parse JSON files without try catch.
 
 Returns `undefined` if the file does not exist.
 
 ```
-yarn add read-file-safe
+yarn add read-json-safe
 ```
 
 ## API
 ```ts
-import { readFile, readFileSync } from "read-file-safe";
+import { readFile, readJSONSync, JSONObject } from "read-json-safe";
 
-readFileSync(path) => string | undefined;
+readJSONSync(path: string) => JSONObject | undefined;
 
-readFile(path: string) => Promise<string | undefined>;
+readJSON(path: string) => Promise<JSONObject | undefined>;
 ```
 

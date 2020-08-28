@@ -880,6 +880,11 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@bconnorwhite/json-types@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@bconnorwhite/json-types/-/json-types-1.0.2.tgz#6ad5d379ef04ad4eb37442b97f7113b994d44675"
+  integrity sha512-XQG8O9wVYdIGvIAkePDy9vI95yRHywPXsUE/SsX+Lu8AXNB9WtAsW86he71MFsZed94UOL1h5j6GALO328C5SA==
+
 "@types/node@^14.0.27":
   version "14.0.27"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.27.tgz#a151873af5a5e851b51b3b065c9e63390a9e0eb1"
@@ -1733,10 +1738,12 @@ once@^1.3.0:
   dependencies:
     wrappy "1"
 
-parse-json-object@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/parse-json-object/-/parse-json-object-1.0.0.tgz#1b052a8a40818548f5a85488ae28974da64ee088"
-  integrity sha512-VDfVXMT427t5CGZCeYfOk3j2JenRLLoylHvdPr6TRlIw/L3eA+z+a3kOkfWwnl8LNWdG5Xo0hDknQhy4FtL6Vg==
+parse-json-object@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/parse-json-object/-/parse-json-object-1.0.3.tgz#c4fd294d5006c06ed1dfa51000c4ef622ef5b163"
+  integrity sha512-HIMcv5bukZIGQYkCv5HfeYu1Z2qtLDQ1XtegU3LuxPZg+zKH0L+Pc2nZ7tcd2uMekDmGo8HCMBDjgudLJ6JwVQ==
+  dependencies:
+    "@bconnorwhite/json-types" "^1.0.2"
 
 pascalcase@^0.1.1:
   version "0.1.1"
@@ -1773,10 +1780,10 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
-read-file-safe@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/read-file-safe/-/read-file-safe-1.0.1.tgz#8ef837ea7b238d279399df9adf63de8d1468fee9"
-  integrity sha512-EjDV+Xc+A4jUyvHRQKh8qxDUqpnBsvM7ZmLMVuc07+lH6qI+u1imRCm+z7fCczt1/kuib8i87FlCA7z0ftYM1A==
+read-file-safe@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/read-file-safe/-/read-file-safe-1.0.3.tgz#491a0adaef0924bf50f6b8eb8b56de2cb2672238"
+  integrity sha512-qIq/pUxpoSFzke8n/+Z39fNo9vSZneiubFth/2Th/pLH2BzbCj93tpfxHS5X9cEXebZ2QvVl6KRSR+t1X3IysA==
 
 readable-stream@^2.0.2:
   version "2.3.7"

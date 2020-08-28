@@ -23,8 +23,8 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "parse-json-object": "^1.0.0",
-    "read-file-safe": "^1.0.1"
+    "parse-json-object": "^1.0.3",
+    "read-file-safe": "^1.0.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
