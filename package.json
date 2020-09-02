@@ -23,11 +23,11 @@
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
-    "parse-json-object": "^1.0.3",
-    "read-file-safe": "^1.0.3"
+    "parse-json-object": "^1.0.4",
+    "read-file-safe": "^1.0.5"
   },
   "devDependencies": {
-    "@bconnorwhite/bob": "^1.9.6",
+    "@bconnorwhite/bob": "^1.9.7",
     "@types/node": "^14.0.27"
   }
 }

@@ -995,10 +995,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@bconnorwhite/bob@^1.9.6":
-  version "1.9.6"
-  resolved "https://registry.yarnpkg.com/@bconnorwhite/bob/-/bob-1.9.6.tgz#ac65070d4f742fa229c2f0a570d52cefa1ed213e"
-  integrity sha512-yxoD6jB9Pe1/9OF0DkvDagIjsqGEMTKlIFDfxxdSgiN08RGgKuQGqNYMn9laNo6rPVBpp3ZGIy96+Qhai5dv8w==
+"@bconnorwhite/bob@^1.9.7":
+  version "1.9.7"
+  resolved "https://registry.yarnpkg.com/@bconnorwhite/bob/-/bob-1.9.7.tgz#2d70e6ee06a2b863df189784c6620747891e7119"
+  integrity sha512-B9guezNsAZ735UZvhK7noEsqJjKLSNPVPIOnKru/CHGKN8Nl/nQsqL/qJzivBbuBBg8Fp+aXQiu9Nt2WFpPylg==
   dependencies:
     "@babel/cli" "^7.10.5"
     "@babel/core" "^7.10.5"
@@ -2543,7 +2543,7 @@ package-run@^1.1.7:
     "@bconnorwhite/exec" "^4.0.0"
     which-pm-lockfile "^1.0.1"
 
-parse-json-object@^1.0.0:
+parse-json-object@^1.0.0, parse-json-object@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/parse-json-object/-/parse-json-object-1.0.4.tgz#873f73dd6863fb390d4c110f265d82c38a0febd9"
   integrity sha512-dIMGBVzbXpSWbeLUowiUCW7CfDNLJRXFYQUzoMrcEAsDfOk98hm6yd06SnwsIonHLDaCk4L4sGmYLhwdSUX7+Q==
@@ -2646,6 +2646,11 @@ read-file-safe@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/read-file-safe/-/read-file-safe-1.0.3.tgz#491a0adaef0924bf50f6b8eb8b56de2cb2672238"
   integrity sha512-qIq/pUxpoSFzke8n/+Z39fNo9vSZneiubFth/2Th/pLH2BzbCj93tpfxHS5X9cEXebZ2QvVl6KRSR+t1X3IysA==
+
+read-file-safe@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/read-file-safe/-/read-file-safe-1.0.5.tgz#db13ff746cc79693c35825bcd518be91aacdfb92"
+  integrity sha512-0gfxwCbDDmvsXFZTB0fKL5pwYkOUhnXH+TSbbR8YkO1fSAIbMgBKv4xDGrVdW1D+yoJcCeabALfnJx7KjenTJg==
 
 read-json-safe@^1.0.1:
   version "1.0.2"
