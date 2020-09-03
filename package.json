@@ -13,6 +13,7 @@
     "catch",
     "ENOENT"
   ],
+  "homepage": "https://connorwhite.org/read-json-safe",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bconnorwhite/read-json-safe.git"
@@ -20,7 +21,8 @@
   "main": "./build/index.js",
   "scripts": {
     "build": "bob build",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "postversion": "git push"
   },
   "dependencies": {
     "parse-json-object": "^1.0.5",
