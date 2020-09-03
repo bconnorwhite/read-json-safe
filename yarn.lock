@@ -1035,6 +1035,11 @@
   resolved "https://registry.yarnpkg.com/@bconnorwhite/json-types/-/json-types-1.0.2.tgz#6ad5d379ef04ad4eb37442b97f7113b994d44675"
   integrity sha512-XQG8O9wVYdIGvIAkePDy9vI95yRHywPXsUE/SsX+Lu8AXNB9WtAsW86he71MFsZed94UOL1h5j6GALO328C5SA==
 
+"@bconnorwhite/json-types@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@bconnorwhite/json-types/-/json-types-1.0.5.tgz#c638604ac07f326e74f0b082d34964e8baf6e75c"
+  integrity sha512-GyVHRWM0Q+PmY7Hicd4l8J2fpsWtb/o1UxsVuzJ8M0SLfpiTuNkak3iA4zCCg66jLnxt6SFEba8oHVRa0CJbeg==
+
 "@bconnorwhite/module@^1.0.4":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@bconnorwhite/module/-/module-1.0.4.tgz#faec96a895b3f85d4f344734007cbf63573e4b1b"
@@ -2543,7 +2548,7 @@ package-run@^1.1.7:
     "@bconnorwhite/exec" "^4.0.0"
     which-pm-lockfile "^1.0.1"
 
-parse-json-object@^1.0.0, parse-json-object@^1.0.4:
+parse-json-object@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/parse-json-object/-/parse-json-object-1.0.4.tgz#873f73dd6863fb390d4c110f265d82c38a0febd9"
   integrity sha512-dIMGBVzbXpSWbeLUowiUCW7CfDNLJRXFYQUzoMrcEAsDfOk98hm6yd06SnwsIonHLDaCk4L4sGmYLhwdSUX7+Q==
@@ -2556,6 +2561,13 @@ parse-json-object@^1.0.3:
   integrity sha512-HIMcv5bukZIGQYkCv5HfeYu1Z2qtLDQ1XtegU3LuxPZg+zKH0L+Pc2nZ7tcd2uMekDmGo8HCMBDjgudLJ6JwVQ==
   dependencies:
     "@bconnorwhite/json-types" "^1.0.2"
+
+parse-json-object@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/parse-json-object/-/parse-json-object-1.0.5.tgz#53fa8c8ec9f6a9648708b9f2ff1d24f5d1f02a4c"
+  integrity sha512-EDnHR+z9CWj3GvFe1769f2hj81iKBIWOQ2iQpZyixmtartEQvWb39o0AXUGs8YHSoIIFrujZexkPNtwkRgFG/Q==
+  dependencies:
+    "@bconnorwhite/json-types" "^1.0.5"
 
 pascalcase@^0.1.1:
   version "0.1.1"
