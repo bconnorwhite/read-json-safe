@@ -19,7 +19,7 @@
 
 <br />
 
-> Read objects from JSON files without try catch.
+> Read JSON files without try catch.
 
 Returns `undefined` on errors, for example if the file does not exist.
 
@@ -95,7 +95,11 @@ type JSONArray = Array<JSONValue>;
 
 [MIT](https://opensource.org/licenses/MIT)
 
+<br />
+
 ## Related Packages
 
+- [fs-safe](https://www.npmjs.com/package/fs-safe): A simple fs wrapper that doesn't throw
+- [read-file-safe](https://www.npmjs.com/package/read-file-safe): Read files without try catch
 - [read-lcov-safe](https://www.npmjs.com/package/read-lcov-safe): Read and parse an lcov file without try catch
 - [read-md-safe](https://www.npmjs.com/package/read-md-safe): Read markdown files as a [Marked](https://www.npmjs.com/package/marked) token list or string
