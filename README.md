@@ -63,3 +63,8 @@ function readJSONSync(path: string): JSONObject | undefined;
 <h2>License <img align="right" alt="license" src="https://img.shields.io/npm/l/read-json-safe.svg"></h2>
 
 [MIT](https://opensource.org/licenses/MIT)
+
+## Related Packages
+
+- [read-lcov-safe](https://www.npmjs.com/package/read-lcov-safe): Read and parse an lcov file without try catch
+- [read-md-safe](https://www.npmjs.com/package/read-md-safe): Read markdown files as a [Marked](https://www.npmjs.com/package/marked) token list or string
