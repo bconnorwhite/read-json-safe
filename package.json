@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "parse-json-object": "^2.0.1",
-    "read-file-safe": "^1.0.5"
+    "read-file-safe": "^1.0.9"
   },
   "devDependencies": {
     "@bconnorwhite/bob": "^2.9.2",
