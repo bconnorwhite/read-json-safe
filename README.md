@@ -21,7 +21,7 @@
 
 > Read objects from JSON files without try catch.
 
-Returns `undefined` if the file does not exist.
+Returns `undefined` on errors, for example if the file does not exist.
 
 ## Installation
 
@@ -34,12 +34,43 @@ npm install read-json-safe
 ```
 
 ## API
+
+### Read a JSONValue:
+
 ```ts
-import { readFile, readJSONSync, JSONObject } from "read-json-safe";
+import { readJSON, readJSONSync, JSONValue } from "read-json-safe";
 
-function readJSON(path: string): Promise<JSONObject | undefined>;
+function readJSON(path: string): Promise<JSONValue | undefined>;
 
-function readJSONSync(path: string): JSONObject | undefined;
+function readJSONSync(path: string): JSONValue | undefined;
+
+type JSONValue = string | number | boolean | JSONObject | JSONArray | null;
+```
+
+### Read a JSONObject:
+
+```ts
+import { readJSONObject, readJSONObjectSync, JSONObject } from "read-json-safe";
+
+function readJSONObject(path: string): Promise<JSONObject| undefined>;
+
+function readJSONObjectSync(path: string): JSONObject| undefined;
+
+type JSONObject = {
+    [key: string]: JSONValue;
+}
+```
+
+### Read a JSONArray:
+
+```ts
+import { readJSONArray, readJSONArraySync, JSONArray } from "read-json-safe";
+
+function readJSONArray(path: string): Promise<JSONArray | undefined>;
+
+function readJSONArraySync(path: string): JSONArray | undefined;
+
+type JSONArray = Array<JSONValue>;
 ```
 
 <br />
