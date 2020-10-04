@@ -1,6 +1,6 @@
 {
   "name": "read-json-safe",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "Read objects from JSON files without try catch",
   "license": "MIT",
   "author": "Connor White",
