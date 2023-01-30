@@ -1,6 +1,6 @@
-import { beforeEach, test, expect } from "@jest/globals";
+import { beforeEach, test, expect, afterEach } from "@jest/globals";
 import mock, { restore } from "mock-fs";
-import { readJSONSync, readJSONObjectSync, readJSONArraySync } from "../source";
+import { readJSONSync, readJSONObjectSync, readJSONArraySync } from "../source/index.js";
 
 beforeEach(async () => {
   mock({
@@ -8,7 +8,7 @@ beforeEach(async () => {
       "obj.json": '{"ok":true}',
       "arr.json": '[{"ok":true}]'
     }
-  })
+  });
 });
 
 afterEach(async () => {

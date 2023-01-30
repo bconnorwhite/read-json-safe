@@ -28,8 +28,8 @@ export function readJSONArraySync(path: string) {
   return parseJSONArray(text);
 }
 
-export {
+export type {
   JSONObject,
   JSONValue,
   JSONArray
-}
+};
