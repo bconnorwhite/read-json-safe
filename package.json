@@ -47,10 +47,10 @@
     "read-file-safe": "^2.1.0"
   },
   "devDependencies": {
-    "@types/mock-fs": "^4.10.0",
-    "@types/node": "^14.0.27",
+    "@types/mock-fs": "^4.13.1",
+    "@types/node": "^18.11.18",
     "autorepo": "^0.1.9",
-    "mock-fs": "^4.13.0"
+    "mock-fs": "^5.2.0"
   },
   "eslintConfig": {
     "extends": "@autosoft/eslint-config"
