@@ -7,8 +7,8 @@
   <a href="https://github.com/bconnorwhite/read-json-safe">
     <img alt="TypeScript" src="https://img.shields.io/github/languages/top/bconnorwhite/read-json-safe.svg">
   </a>
-  <a href="https://coveralls.io/github/bconnorwhite/read-json-safe?branch=master">
-    <img alt="Coverage Status" src="https://img.shields.io/coveralls/github/bconnorwhite/read-json-safe.svg?branch=master">
+  <a href="https://coveralls.io/github/bconnorwhite/read-json-safe?branch=main">
+    <img alt="Coverage Status" src="https://img.shields.io/coveralls/github/bconnorwhite/read-json-safe.svg?branch=main">
   </a>
 </div>
 
@@ -16,17 +16,6 @@
 
 <blockquote align="center">Read JSON files without try catch.</blockquote>
 
-<br />
-
-_If I should maintain this repo, please ⭐️_
-<a href="https://github.com/bconnorwhite/read-json-safe">
-  <img align="right" alt="GitHub stars" src="https://img.shields.io/github/stars/bconnorwhite/read-json-safe?label=%E2%AD%90%EF%B8%8F&style=social">
-</a>
-
-_DM me on [Twitter](https://twitter.com/bconnorwhite) if you have questions or suggestions._
-<a href="https://twitter.com/bconnorwhite">
-  <img align="right" alt="Twitter" src="https://img.shields.io/twitter/url?label=%40bconnorwhite&style=social&url=https%3A%2F%2Ftwitter.com%2Fbconnorwhite">
-</a>
 
 ---
 <!--END HEADER-->
@@ -35,17 +24,54 @@ Returns `undefined` on errors, for example if the file does not exist.
 
 ## Installation
 
-```sh
-yarn add read-json-safe
-```
+<details open>
+  <summary>
+    <a href="https://www.npmjs.com/package/read-json-safe">
+      <img src="https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=white" alt="NPM" />
+    </a>
+  </summary>
 
 ```sh
 npm install read-json-safe
 ```
 
+</details>
+
+<details>
+  <summary>
+    <a href="https://yarnpkg.com/package/read-json-safe">
+      <img src="https://img.shields.io/badge/yarn-2C8EBB?logo=yarn&logoColor=white" alt="Yarn" />
+    </a>
+  </summary>
+
+```sh
+yarn add read-json-safe
+```
+
+</details>
+
+<details>
+  <summary>
+    <img src="https://img.shields.io/badge/pnpm-F69220?logo=pnpm&logoColor=white" alt="PNPM" />
+  </summary>
+
 ```sh
 pnpm add read-json-safe
 ```
+
+</details>
+
+<details>
+  <summary>
+    <img src="https://img.shields.io/badge/bun-EE81C3?logo=bun&logoColor=white" alt="Bun" />
+  </summary>
+
+```sh
+bun add read-json-safe
+```
+
+</details>
+
 
 ## Usage
 
@@ -77,30 +103,9 @@ readJSONArraySync("file.json"); // JSONArray | undefined
 ```
 
 <!--BEGIN FOOTER-->
-
-<br />
-
-<h2 id="dependencies">Dependencies<a href="https://www.npmjs.com/package/read-json-safe?activeTab=dependencies"><img align="right" alt="dependencies" src="https://img.shields.io/librariesio/release/npm/read-json-safe.svg"></a></h2>
-
-- [parse-json-object](https://www.npmjs.com/package/parse-json-object): Parse a typed JSON object
-- [read-file-safe](https://www.npmjs.com/package/read-file-safe): Read files without try catch
-
-
-<br />
-
-<h3>Dev Dependencies</h3>
-
-- [@types/mock-fs](https://www.npmjs.com/package/@types/mock-fs): TypeScript definitions for mock-fs
-- [@types/node](https://www.npmjs.com/package/@types/node): TypeScript definitions for Node.js
-- [autorepo](https://www.npmjs.com/package/autorepo): Autorepo abstracts away your dev dependencies, providing a single command to run all of your scripts.
-- [mock-fs](https://www.npmjs.com/package/mock-fs): A configurable mock file system.  You know, for testing.
-
-
-<br />
-
 <h2 id="license">License <a href="https://opensource.org/licenses/MIT"><img align="right" alt="license" src="https://img.shields.io/npm/l/read-json-safe.svg"></a></h2>
 
-[MIT](https://opensource.org/licenses/MIT)
+[MIT](https://opensource.org/licenses/MIT) - _MIT License_
 <!--END FOOTER-->
 
 <br />

@@ -1,8 +1,10 @@
-import { beforeEach, test, expect, afterEach } from "@jest/globals";
+/* eslint-disable import/no-relative-parent-imports, @typescript-eslint/no-floating-promises */
+import assert from "node:assert/strict";
+import { beforeEach, test, afterEach } from "node:test";
 import mock, { restore } from "mock-fs";
-import { readJSON, readJSONObject, readJSONArray } from "../source/index.js";
+import { readJSON, readJSONObject, readJSONArray } from "../src/index.ts";
 
-beforeEach(async () => {
+beforeEach(() => {
   mock({
     "/test": {
       "obj.json": '{"ok":true}',
@@ -11,48 +13,48 @@ beforeEach(async () => {
   });
 });
 
-afterEach(async () => {
+afterEach(() => {
   restore();
 });
 
-test("read object as value", async () => {
+test("read object as value", () => {
   return readJSON("/test/obj.json").then((json) => {
-    expect(json).toEqual({ ok: true });
+    assert.deepEqual(json, { ok: true });
   });
 });
 
-test("read object as object", async () => {
+test("read object as object", () => {
   return readJSONObject("/test/obj.json").then((json) => {
-    expect(json).toEqual({ ok: true });
+    assert.deepEqual(json, { ok: true });
   });
 });
 
 test("read object as array", async () => {
   return readJSONArray("/test/obj.json").then((json) => {
-    expect(json).toEqual(undefined);
+    assert.deepEqual(json, undefined);
   });
 });
 
 test("read array as value", async () => {
   return readJSON("/test/arr.json").then((json) => {
-    expect(json).toEqual([{ ok: true }]);
+    assert.deepEqual(json, [{ ok: true }]);
   });
 });
 
 test("read array as object", async () => {
   return readJSONObject("/test/arr.json").then((json) => {
-    expect(json).toEqual(undefined);
+    assert.deepEqual(json, undefined);
   });
 });
 
 test("read array as array", async () => {
   return readJSONArray("/test/arr.json").then((json) => {
-    expect(json).toEqual([{ ok: true }]);
+    assert.deepEqual(json, [{ ok: true }]);
   });
 });
 
 test("read no exists", async () => {
   return readJSON("/test/nope.json").then((json) => {
-    expect(json).toBe(undefined);
+    assert.equal(json, undefined);
   });
 });

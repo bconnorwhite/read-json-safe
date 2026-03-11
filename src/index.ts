@@ -1,5 +1,6 @@
 import { readFile, readFileSync } from "read-file-safe";
-import { parseJSONValue, parseJSONObject, parseJSONArray, JSONValue, JSONObject, JSONArray } from "parse-json-object";
+import { parseJSONValue, parseJSONObject, parseJSONArray } from "parse-json-object";
+import type { JSONValue, JSONObject, JSONArray } from "types-json";
 
 export async function readJSON(path: string) {
   return readFile(path).then((text) => parseJSONValue(text));
