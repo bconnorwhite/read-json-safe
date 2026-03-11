@@ -1,6 +1,6 @@
 {
   "name": "read-json-safe",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Read JSON files without try catch",
   "license": "MIT",
   "private": false,
